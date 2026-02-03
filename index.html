@@ -1,13 +1,288 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<title>Site Working</title>
-<link rel="stylesheet" href="/css/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Naloxone Advocates — Plymouth</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css" />
 </head>
 <body>
-<h1>Your site is now loading correctly</h1>
-<p>If you can see colors, Netlify is fixed.</p>
-<script src="/js/app.js"></script>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="/index.html" aria-label="Home">
+        <span class="brand-dot"></span>
+        <span class="brand-text">
+          <span class="brand-name">Naloxone</span>
+          <span class="brand-sub">Advocates</span>
+        </span>
+      </a>
+
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+
+      <nav class="nav-links" id="navLinks">
+        <a class="active" href="/index.html">Home</a>
+        <a href="/about.html">About Us</a>
+        <a href="/training.html">Training & P2P</a>
+        <a href="/get-naloxone.html">Get Naloxone</a>
+        <a href="/volunteer.html">Volunteer</a>
+        <a href="/resources.html">Resources</a>
+        <a href="/contact.html">Contact</a>
+        <a class="btn btn-primary btn-sm" href="/get-naloxone.html">Get Naloxone Now</a>
+      </nav>
+
+      <button class="cart-btn" id="openCartBtn" aria-label="Open cart">
+        🛒 <span class="cart-badge" id="cartCount">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="pill">NALOXONE SAVES LIVES</div>
+          <h1>Peer-led harm reduction in Plymouth & Devon.</h1>
+          <p class="muted">
+            We provide stigma-free naloxone training, kit distribution, and peer-to-peer support.
+            Book training sessions online — add to cart, checkout, and we’ll confirm your place.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-pink" href="/training.html">Book training</a>
+            <a class="btn btn-outline" href="/get-naloxone.html">Request a kit</a>
+            <button class="btn btn-blue" data-open-cart>View cart</button>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat">
+              <div class="stat-num">150+</div>
+              <div class="stat-label">Lives saved</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num">2000+</div>
+              <div class="stat-label">Kits distributed</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num">Weekly</div>
+              <div class="stat-label">Training sessions</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <div class="hero-card-top">
+            <div class="tag tag-blue">Upcoming training</div>
+            <div class="tag tag-green">£20</div>
+          </div>
+
+          <h3 class="mt-12">Community Naloxone Training</h3>
+          <ul class="meta">
+            <li>📅 15 Feb 2026</li>
+            <li>🕙 10:00 AM</li>
+            <li>📍 Plymouth Community Centre</li>
+          </ul>
+
+          <button
+            class="btn btn-yellow btn-full js-add"
+            data-id="sess-1502"
+            data-title="Community Naloxone Training"
+            data-date="15 Feb 2026"
+            data-time="10:00 AM"
+            data-location="Plymouth Community Centre"
+            data-price="20"
+          >🛒 Add to cart</button>
+
+          <p class="tiny muted mt-10">
+            Checkout sends your booking to Netlify Forms + Google Sheets (if connected).
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>What we offer</h2>
+        <div class="cards">
+          <article class="card">
+            <div class="tag tag-pink">Training</div>
+            <h3 class="mt-10">Naloxone training</h3>
+            <p class="muted">Practical overdose response training for individuals, groups and organisations.</p>
+            <a class="btn btn-outline btn-sm" href="/training.html">See sessions</a>
+          </article>
+
+          <article class="card">
+            <div class="tag tag-lime">Kits</div>
+            <h3 class="mt-10">Naloxone kits</h3>
+            <p class="muted">Request a kit or arrange pickup — we’ll help you find the quickest option.</p>
+            <a class="btn btn-outline btn-sm" href="/get-naloxone.html">Request a kit</a>
+          </article>
+
+          <article class="card">
+            <div class="tag tag-purple">P2P</div>
+            <h3 class="mt-10">Peer-to-peer</h3>
+            <p class="muted">Peer trainers and community champions who can deliver training where it’s needed.</p>
+            <a class="btn btn-outline btn-sm" href="/training.html">Learn more</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section soft">
+      <div class="container split">
+        <div class="card">
+          <h2>Need help right now?</h2>
+          <p class="muted">If someone is unresponsive or not breathing normally, call emergency services immediately.</p>
+          <div class="actions">
+            <a class="btn btn-blue" href="/resources.html">Crisis resources</a>
+            <a class="btn btn-outline" href="/contact.html">Contact us</a>
+          </div>
+        </div>
+
+        <div class="quote-card">
+          <div class="quote">“Non-judgemental, clear, and empowering. I left feeling confident to help.”</div>
+          <div class="quote-who">
+            <div class="avatar">NA</div>
+            <div>
+              <div class="fw-900">Training attendee</div>
+              <div class="muted tiny">Plymouth</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="brand footer-brand">
+          <span class="brand-dot"></span>
+          <span class="brand-text">
+            <span class="brand-name">Naloxone</span>
+            <span class="brand-sub">Advocates</span>
+          </span>
+        </div>
+        <p class="muted footer-muted">
+          Grassroots, peer-led harm reduction. Training, kits, and community support in Plymouth & Devon.
+        </p>
+      </div>
+
+      <div>
+        <h4>Quick Links</h4>
+        <div class="footer-links">
+          <a href="/training.html">Training</a>
+          <a href="/get-naloxone.html">Get Naloxone</a>
+          <a href="/volunteer.html">Volunteer</a>
+          <a href="/resources.html">Resources</a>
+        </div>
+      </div>
+
+      <div>
+        <h4>Newsletter</h4>
+        <form name="newsletter" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks.html" class="footer-form">
+          <input type="hidden" name="form-name" value="newsletter" />
+          <p class="hidden"><label>Don’t fill this out: <input name="bot-field" /></label></p>
+          <input name="email" placeholder="Your email" />
+          <button class="btn btn-pink btn-sm" type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <span class="badge">NALOXONE SAVES LIVES</span>
+      <span class="muted tiny">© 2026 Naloxone Advocates</span>
+    </div>
+  </footer>
+
+  <!-- Modals + hidden booking form -->
+  <div class="overlay" id="overlay"></div>
+
+  <section class="modal" id="cartModal" role="dialog" aria-modal="true" aria-labelledby="cartTitle">
+    <div class="modal-head">
+      <h3 id="cartTitle">Your Booking Cart</h3>
+      <div class="modal-head-actions">
+        <button class="btn btn-outline btn-sm" id="clearCartBtn">Clear</button>
+        <button class="icon-btn" id="closeCartBtn" aria-label="Close">✕</button>
+      </div>
+    </div>
+
+    <div class="modal-body two-col">
+      <div>
+        <div id="cartEmpty" class="empty">Your cart is empty. Add a training session to book.</div>
+        <div id="cartList" class="cart-list"></div>
+      </div>
+
+      <aside class="summary">
+        <div class="row"><span class="muted">Items</span><span id="sumItems">0</span></div>
+        <div class="row"><span class="muted">Subtotal</span><span id="sumSubtotal">£0.00</span></div>
+        <div class="row"><span class="muted">Fees</span><span id="sumFees">£0.00</span></div>
+        <div class="row total"><span>Total</span><span id="sumTotal">£0.00</span></div>
+
+        <button class="btn btn-pink btn-full" id="checkoutBtn">Proceed to Checkout</button>
+        <button class="btn btn-outline btn-full" id="continueBtn">Continue browsing</button>
+
+        <p class="tiny muted mt-10">
+          Checkout submits to Netlify Forms + Google Sheets (if enabled).
+        </p>
+      </aside>
+    </div>
+  </section>
+
+  <section class="modal" id="checkoutModal" role="dialog" aria-modal="true" aria-labelledby="checkoutTitle">
+    <div class="modal-head">
+      <h3 id="checkoutTitle">Checkout</h3>
+      <button class="icon-btn" id="closeCheckoutBtn" aria-label="Close">✕</button>
+    </div>
+
+    <div class="checkout" id="checkoutFormWrap">
+      <div class="field">
+        <label for="name">Full name</label>
+        <input id="name" placeholder="Jane Doe" />
+      </div>
+      <div class="field">
+        <label for="email">Email</label>
+        <input id="email" type="email" placeholder="jane@example.com" />
+      </div>
+      <div class="field">
+        <label for="phone">Phone (optional)</label>
+        <input id="phone" placeholder="07123 456789" />
+      </div>
+      <div class="field">
+        <label for="notes">Notes</label>
+        <textarea id="notes" placeholder="Access needs, etc."></textarea>
+      </div>
+
+      <div class="actions">
+        <button class="btn btn-pink" id="placeBookingBtn">Place booking</button>
+        <button class="btn btn-outline" id="backToCartBtn" type="button">Back to cart</button>
+      </div>
+
+      <div class="success" id="checkoutSuccess">
+        ✅ Booking placed! Check Netlify → Forms (“booking”), and Google Sheets if connected.
+      </div>
+    </div>
+  </section>
+
+  <!-- Netlify requires a real form in HTML to detect it -->
+  <form name="booking" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks.html" class="hidden">
+    <input type="hidden" name="form-name" value="booking" />
+    <p class="hidden"><label>Don’t fill this out: <input name="bot-field" /></label></p>
+    <input name="order_id" />
+    <input name="createdAt" />
+    <input name="name" />
+    <input name="email" />
+    <input name="phone" />
+    <textarea name="notes"></textarea>
+    <textarea name="items"></textarea>
+    <textarea name="totals"></textarea>
+  </form>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="/js/app.js"></script>
 </body>
 </html>
