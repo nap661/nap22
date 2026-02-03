@@ -150,3 +150,51 @@ h2{font-size:30px;margin:0 0 18px}
   .nav-links.open{display:flex}
   .menu-btn{display:inline-flex}
 }
+/* ==========================
+   HOME PAGE COLOR SECTIONS
+   Add bold color bands + more contrast
+   ========================== */
+
+.section.soft{
+  background: linear-gradient(180deg, rgba(37,99,235,.10), rgba(255,79,163,.08));
+}
+
+.section:nth-of-type(2){
+  background: #ffffff;
+}
+
+.section:nth-of-type(3){
+  background: linear-gradient(90deg, rgba(255,79,163,.18), rgba(37,99,235,.15));
+}
+
+.section:nth-of-type(4){
+  background: #0b1220;
+  color: #fff;
+}
+
+.section:nth-of-type(4) .muted{
+  color: rgba(255,255,255,.75);
+}
+
+.section:nth-of-type(4) .card{
+  background: rgba(255,255,255,.08);
+  border-color: rgba(255,255,255,.16);
+  color: #fff;
+}
+
+/* Make the “What we offer” cards pop */
+.cards .card{
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+.cards .card:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 25px 70px rgba(2,6,23,.14);
+}
+
+/* Stronger button styling */
+.btn-pink{
+  box-shadow: 0 14px 40px rgba(255,79,163,.35);
+}
+.btn-blue{
+  box-shadow: 0 14px 40px rgba(37,99,235,.30);
+}
