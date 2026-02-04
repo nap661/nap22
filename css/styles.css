@@ -198,3 +198,23 @@ h2{font-size:30px;margin:0 0 18px}
 .btn-blue{
   box-shadow: 0 14px 40px rgba(37,99,235,.30);
 }
+/* FORCE CRISIS SECTION TO DARK WITHOUT HTML EDIT */
+.section.soft{
+  background: #0b1220 !important;
+  color: #ffffff;
+}
+
+.section.soft h2,
+.section.soft h3{
+  color: #ffffff;
+}
+
+.section.soft .muted{
+  color: rgba(255,255,255,.8);
+}
+
+.section.soft .card,
+.section.soft .quote-card{
+  background: #ffffff;
+  color: #0f172a;
+}
