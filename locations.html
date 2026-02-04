@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pickup Locations — Naloxone Advocates</title>
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="/index.html" aria-label="Home">
+        <span class="brand-dot"></span>
+        <span class="brand-text">
+          <span class="brand-name">Naloxone</span>
+          <span class="brand-sub">Advocates</span>
+        </span>
+      </a>
+
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="/index.html">Home</a>
+        <a href="/about.html">About Us</a>
+        <a href="/training.html">Training & P2P</a>
+        <a href="/get-naloxone.html">Get Naloxone</a>
+        <a class="active" href="/locations.html">Pickup Locations</a>
+        <a href="/faq.html">FAQ</a>
+        <a href="/volunteer.html">Volunteer</a>
+        <a href="/resources.html">Resources</a>
+        <a href="/contact.html">Contact</a>
+        <a class="btn btn-primary btn-sm" href="/request-kit.html">Request a Kit</a>
+      </nav>
+
+      <button class="cart-btn" id="openCartBtn" aria-label="Open cart">
+        🛒 <span class="cart-badge" id="cartCount">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <div class="tag">Find Naloxone</div>
+      <h1 class="mt-12">Pickup locations near you</h1>
+      <p class="muted">Use the map and list below. Call ahead where possible.</p>
+
+      <div class="map-wrap mt-20">
+        <!-- Replace "Plymouth, Devon" with your preferred area or a custom Google Map embed -->
+        <iframe
+          title="Naloxone pickup locations"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps?q=Plymouth%2C%20Devon&z=12&output=embed">
+        </iframe>
+      </div>
+
+      <div class="cards two mt-20">
+        <article class="card">
+          <h3>Community Centre Pickup</h3>
+          <p class="muted">Plymouth Community Centre</p>
+          <ul class="list">
+            <li><strong>Days:</strong> Mon–Fri</li>
+            <li><strong>Hours:</strong> 10:00–16:00</li>
+            <li><strong>Notes:</strong> Ask at reception</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Outreach Pickup</h3>
+          <p class="muted">Devonport (mobile outreach)</p>
+          <ul class="list">
+            <li><strong>Days:</strong> Wednesdays</li>
+            <li><strong>Hours:</strong> 14:00–17:00</li>
+            <li><strong>Notes:</strong> Location varies — message us</li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="card mt-20">
+        <h3>Don’t see a nearby option?</h3>
+        <p class="muted">Request a kit and we’ll help you find the fastest route.</p>
+        <div class="actions mt-12">
+          <a class="btn btn-pink" href="/request-kit.html">Request a kit</a>
+          <a class="btn btn-outline" href="/contact.html">Contact us</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="/js/app.js"></script>
+</body>
+</html>
