@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Request a Naloxone Kit — Naloxone Advocates</title>
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="/index.html" aria-label="Home">
+        <span class="brand-dot"></span>
+        <span class="brand-text">
+          <span class="brand-name">Naloxone</span>
+          <span class="brand-sub">Advocates</span>
+        </span>
+      </a>
+
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="/index.html">Home</a>
+        <a href="/about.html">About Us</a>
+        <a href="/training.html">Training & P2P</a>
+        <a href="/get-naloxone.html">Get Naloxone</a>
+        <a href="/locations.html">Pickup Locations</a>
+        <a href="/faq.html">FAQ</a>
+        <a href="/volunteer.html">Volunteer</a>
+        <a href="/resources.html">Resources</a>
+        <a href="/contact.html">Contact</a>
+      </nav>
+
+      <button class="cart-btn" id="openCartBtn" aria-label="Open cart">
+        🛒 <span class="cart-badge" id="cartCount">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container split">
+      <div class="card">
+        <div class="tag tag-pink">Anonymous</div>
+        <h1 class="mt-12">Request a naloxone kit</h1>
+        <p class="muted">
+          You don’t need to share your full name. Give us the minimum needed to help you quickly.
+        </p>
+
+        <!-- FORM BACKEND OPTION (recommended): Formspree
+             1) Create a Formspree form
+             2) Replace the action URL below with your Formspree endpoint (looks like https://formspree.io/f/xxxxxx)
+        -->
+        <form class="form-grid" method="POST" action="https://formspree.io/f/REPLACE_ME">
+          <div class="field">
+            <label>First name (optional)</label>
+            <input name="first_name" placeholder="Optional" />
+          </div>
+
+          <div class="field">
+            <label>How can we contact you?</label>
+            <input name="contact" required placeholder="Email or phone" />
+          </div>
+
+          <div class="field">
+            <label>Postcode / area</label>
+            <input name="area" required placeholder="e.g. PL1" />
+          </div>
+
+          <div class="field">
+            <label>Urgency</label>
+            <select name="urgency" required>
+              <option value="">Select…</option>
+              <option>Today</option>
+              <option>This week</option>
+              <option>Not urgent</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label>Preferred method</label>
+            <select name="method" required>
+              <option value="">Select…</option>
+              <option>Pickup</option>
+              <option>Delivery (if available)</option>
+              <option>Not sure</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label>Anything else? (optional)</label>
+            <textarea name="notes" placeholder="Access needs, safe contact times, etc."></textarea>
+          </div>
+
+          <button class="btn btn-pink" type="submit">Send request</button>
+        </form>
+
+        <p class="tiny muted mt-12">
+          In an emergency, call emergency services immediately.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Fast options</h2>
+        <p class="muted">If you can, pickup is usually quickest.</p>
+        <div class="actions mt-12">
+          <a class="btn btn-blue" href="/locations.html">View pickup locations</a>
+          <a class="btn btn-outline" href="/training.html">Book training</a>
+        </div>
+
+        <div class="mt-20 emergency">
+          <strong>In an emergency</strong><br />
+          Always call emergency services first. Naloxone is temporary — medical help is essential.
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="/js/app.js"></script>
+</body>
+</html>
