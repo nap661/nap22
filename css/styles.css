@@ -460,3 +460,65 @@ h2{font-size:30px;margin:0 0 18px}
 .footer .tiny{
   color: rgba(255,255,255,.65);
 }
+/* =========================
+   BLUE FOOTER (FINAL)
+   ========================= */
+
+.footer{
+  background: linear-gradient(180deg, #2563eb, #1e40af);
+  color: #ffffff;
+  padding-top: 64px;
+}
+
+.footer .brand-name,
+.footer .brand-sub,
+.footer h4{
+  color: #ffffff;
+}
+
+.footer .footer-muted{
+  color: rgba(255,255,255,.85);
+  max-width: 360px;
+}
+
+.footer-links a{
+  color: rgba(255,255,255,.9);
+  text-decoration: none;
+  display: block;
+  margin: 6px 0;
+  font-weight: 600;
+}
+
+.footer-links a:hover{
+  color: #facc15;
+}
+
+.footer-form input{
+  background: rgba(255,255,255,.15);
+  border: 1px solid rgba(255,255,255,.35);
+  color: #ffffff;
+}
+
+.footer-form input::placeholder{
+  color: rgba(255,255,255,.7);
+}
+
+.footer-form button{
+  margin-top: 10px;
+}
+
+.footer-bottom{
+  border-top: 1px solid rgba(255,255,255,.25);
+  margin-top: 40px;
+  padding-top: 20px;
+}
+
+.footer .badge{
+  background: #facc15;
+  color: #111111;
+  font-weight: 900;
+}
+
+.footer .tiny{
+  color: rgba(255,255,255,.75);
+}
