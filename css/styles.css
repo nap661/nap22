@@ -358,3 +358,43 @@ h2{font-size:30px;margin:0 0 18px}
   border:2px solid #2563eb;color:#2563eb;font-weight:900;background:#fff;text-decoration:none
 }
 .btn.btn-blue-outline:hover{background:#eff6ff}
+/* ===== Screenshot Hero + Stats + Upcoming ===== */
+
+.top-hero{padding-top:38px;padding-bottom:26px}
+.hero-grid{display:grid;grid-template-columns:1.2fr .9fr;gap:22px;align-items:stretch}
+@media(max-width:900px){.hero-grid{grid-template-columns:1fr}}
+
+.hero-card{border-radius:22px;box-shadow:0 12px 35px rgba(0,0,0,.12);overflow:hidden}
+
+.hero-left{padding:34px 34px 28px;background:linear-gradient(135deg,#f3d547,#90c32b);color:#111}
+.hero-left h1{font-size:46px;line-height:1.05;margin:0 0 12px;letter-spacing:-.02em}
+.hero-left p{margin:0 0 18px;max-width:520px}
+
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:8px}
+
+.hero-right{background:linear-gradient(180deg,#2563eb,#1d4ed8);padding:22px;display:flex;flex-direction:column;justify-content:center;align-items:center}
+.hero-photo{
+  width:150px;height:150px;border-radius:50%;
+  border:6px solid rgba(255,255,255,.75);
+  background:radial-gradient(circle at 30% 30%, rgba(255,255,255,.35), rgba(255,255,255,0));
+}
+.hero-icons{display:flex;gap:14px;margin-top:18px}
+.bubble{width:52px;height:52px;border-radius:50%;display:grid;place-items:center;font-size:22px;box-shadow:0 10px 24px rgba(0,0,0,.18)}
+.bubble.yellow{background:#facc15}
+.bubble.pink{background:#ff4fa3;color:#fff}
+.bubble.green{background:#84cc16}
+
+.stats-bar{background:linear-gradient(90deg,#3b82f6,#2563eb);margin-top:26px;padding:26px 0}
+.stats-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;text-align:center;color:#fff}
+@media(max-width:900px){.stats-grid{grid-template-columns:1fr}}
+.stat-num{font-size:44px;font-weight:900}
+.stat-label{opacity:.9}
+
+.upcoming{padding-top:26px;padding-bottom:42px}
+.up-title{font-size:44px;margin:12px 0 6px}
+.up-sub{margin:0 auto 22px;max-width:620px;opacity:.85}
+
+.up-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+@media(max-width:950px){.up-grid{grid-template-columns:1fr}}
+
+.session-card{background:#fff;border-radius:18px;box-shadow:0 14px 32px rgba(0,0,0,.10);padding:18px}
