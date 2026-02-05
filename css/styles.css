@@ -828,3 +828,18 @@ h2{font-size:30px;margin:0 0 18px}
   border-radius: 18px;
   box-shadow: 0 10px 24px rgba(0,0,0,.10);
 }
+/* --- FIX: text disappearing in band sections --- */
+
+/* Community Voices: keep title white, force card text dark */
+.section.band-blue { color: #fff; }              /* section background area */
+.section.band-blue .card,
+.section.band-blue .card * { color: #111; }      /* everything inside cards */
+.section.band-blue .card .muted { color: rgba(0,0,0,.65); }
+.section.band-blue .stars { color: #f4c400; }
+
+/* Join Our Community: title white, force card text dark */
+.section.band-purple { color: #fff; }            /* section background area */
+.section.band-purple .card,
+.section.band-purple .card * { color: #111; }    /* everything inside cards */
+.section.band-purple .card .muted { color: rgba(0,0,0,.65); }
+.section.band-purple .link { color: #2f6fe7; font-weight: 700; }
