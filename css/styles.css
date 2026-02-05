@@ -724,3 +724,23 @@ h2{font-size:30px;margin:0 0 18px}
   color: #111827;
   background: #facc15;
 }
+/* NALOXONE TRAINING PROGRAMMES (GREEN SECTION) */
+.section.band-green {
+  background: #22c55e; /* green */
+  color: #ffffff;
+}
+
+.section.band-green h2,
+.section.band-green h3 {
+  color: #ffffff;
+}
+
+.section.band-green .card {
+  background: #ffffff;
+  color: #111827;
+  border-radius: 16px;
+}
+
+.section.band-green .ticks li {
+  color: #111827;
+}
