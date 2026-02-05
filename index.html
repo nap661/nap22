@@ -4,10 +4,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Naloxone Advocates — Plymouth</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/styles.css" />
+</head>
+
+<body>
+
 <header class="site-header">
   <div class="container nav">
     <a class="brand" href="/index.html" aria-label="Home">
@@ -40,9 +45,7 @@
   </div>
 </header>
 
-
-
-  <main>
+<main>
   <!-- HERO (Screenshot layout) -->
 <section class="section top-hero">
   <div class="container hero-grid">
@@ -597,27 +600,62 @@
 
     <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
 
-    <nav class="nav-links" id="navLinks">
-      <a class="active" href="/index.html">Home</a>
-      <a href="/about.html">About Us</a>
-      <a href="/training.html">Training & P2P</a>
-      <a href="/get-naloxone.html">Get Naloxone</a>
-      <a href="/locations.html">Pickup Locations</a>
-      <a href="/request-kit.html">Request a Kit</a>
-      <a href="/faq.html">FAQ</a>
-      <a href="/volunteer.html">Volunteer</a>
-      <a href="/resources.html">Resources</a>
-      <a href="/contact.html">Contact</a>
-      <a class="btn btn-primary btn-sm" href="/request-kit.html">Request a Kit Now</a>
-    </nav>
-
     <button class="cart-btn" id="openCartBtn" aria-label="Open cart">
       🛒 <span class="cart-badge" id="cartCount">0</span>
     </button>
   </div>
-</header><script src="/js/app.js"></script>
+</header>
+
+ </main>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <div class="brand footer-brand">
+        <span class="brand-dot"></span>
+        <span class="brand-text">
+          <span class="brand-name">Naloxone</span>
+          <span class="brand-sub">Advocates</span>
+        </span>
+      </div>
+      <p class="muted footer-muted">
+        Grassroots, peer-led harm reduction. Training, kits, and community support in Plymouth & Devon.
+      </p>
+    </div>
+
+    <div>
+      <h4>Quick Links</h4>
+      <div class="footer-links">
+        <a href="/training.html">Training</a>
+        <a href="/get-naloxone.html">Get Naloxone</a>
+        <a href="/volunteer.html">Volunteer</a>
+        <a href="/resources.html">Resources</a>
+      </div>
+    </div>
+
+    <div>
+      <h4>Newsletter</h4>
+      <form name="newsletter" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks.html" class="footer-form">
+        <input type="hidden" name="form-name" value="newsletter" />
+        <p class="hidden"><label>Don’t fill this out: <input name="bot-field" /></label></p>
+        <input name="email" placeholder="Your email" />
+        <button class="btn btn-pink btn-sm" type="submit">Subscribe</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="container footer-bottom">
+    <span class="badge">NALOXONE SAVES LIVES</span>
+    <span class="muted tiny">© 2026 Naloxone Advocates</span>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="/js/app.js"></script>
 </body>
 </html>
+
 
 
 
