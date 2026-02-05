@@ -1,5 +1,5 @@
-// Shared nav injected into every page (no fetch needed)
-(function () {
+// Shared nav injected after DOM is ready
+document.addEventListener("DOMContentLoaded", () => {
   const el = document.querySelector("#siteHeaderInner");
   if (!el) return;
 
@@ -32,5 +32,6 @@
       🛒 <span class="cart-badge" id="cartCount">0</span>
     </button>
   `;
-})();
+});
+
 
