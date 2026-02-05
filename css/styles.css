@@ -744,3 +744,87 @@ h2{font-size:30px;margin:0 0 18px}
 .section.band-green .ticks li {
   color: #111827;
 }
+/* ==============================
+   FIX: Band section colours
+   (paste at END of styles.css)
+   ============================== */
+
+/* COMMUNITY VOICES (blue band + white cards) */
+.section.band-blue{
+  background: #3d7fe8; /* strong blue like screenshot */
+  padding: 72px 0;
+}
+
+.section.band-blue h2{
+  color: #fff;
+  text-align: center;
+  font-weight: 900;
+}
+
+.section.band-blue .card{
+  background: #fff;
+  color: #111;
+  border-radius: 18px;
+  box-shadow: 0 10px 24px rgba(0,0,0,.10);
+}
+
+.section.band-blue .muted{
+  color: rgba(0,0,0,.65);
+}
+
+.section.band-blue .stars{
+  color: #f4c400; /* yellow stars */
+}
+
+
+/* JOIN OUR COMMUNITY (purple->blue gradient + white title + readable card text) */
+.section.band-purple{
+  background: linear-gradient(135deg,#d84fb4 0%, #6b63ff 60%, #3d7fe8 100%);
+  padding: 72px 0;
+}
+
+.section.band-purple h2{
+  color: #fff;
+  text-align: center;
+  font-weight: 900;
+}
+
+.section.band-purple p.muted{
+  color: rgba(255,255,255,.85);
+}
+
+.section.band-purple .card{
+  background: #fff;
+  color: #111;
+  border-radius: 18px;
+  box-shadow: 0 10px 24px rgba(0,0,0,.12);
+}
+
+.section.band-purple .card .muted{
+  color: rgba(0,0,0,.65);
+}
+
+.section.band-purple .link{
+  color: #2f6fe7;
+  font-weight: 700;
+}
+
+
+/* NALOXONE TRAINING PROGRAMS (lime band + white heading + white cards) */
+.section.band-green{
+  background: #a6e635; /* lime like screenshot */
+  padding: 72px 0;
+}
+
+.section.band-green h2{
+  color: #fff;
+  text-align: center;
+  font-weight: 900;
+}
+
+.section.band-green .card{
+  background: #fff;
+  color: #111;
+  border-radius: 18px;
+  box-shadow: 0 10px 24px rgba(0,0,0,.10);
+}
