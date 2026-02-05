@@ -1,16 +1,36 @@
-// Load shared HTML partials (nav)
-async function loadPartial(selector, url) {
-  const el = document.querySelector(selector);
+// Shared nav injected into every page (no fetch needed)
+(function () {
+  const el = document.querySelector("#siteHeaderInner");
   if (!el) return;
 
-  try {
-    const res = await fetch(url, { cache: "no-cache" });
-    if (!res.ok) throw new Error("Failed to load " + url);
-    el.innerHTML = await res.text();
-  } catch (err) {
-    console.error(err);
-  }
-}
+  el.innerHTML = `
+    <a class="brand" href="/index.html" aria-label="Home">
+      <span class="brand-dot"></span>
+      <span class="brand-text">
+        <span class="brand-name">Naloxone</span>
+        <span class="brand-sub">Advocates</span>
+      </span>
+    </a>
 
-// Load the shared navigation
-loadPartial("#siteHeaderInner", "/partials/nav.html");
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="/index.html">Home</a>
+      <a href="/about.html">About Us</a>
+      <a href="/training.html">Training & P2P</a>
+      <a href="/get-naloxone.html">Get Naloxone</a>
+      <a href="/locations.html">Pickup Locations</a>
+      <a href="/request-kit.html">Request a Kit</a>
+      <a href="/faq.html">FAQ</a>
+      <a href="/volunteer.html">Volunteer</a>
+      <a href="/resources.html">Resources</a>
+      <a href="/contact.html">Contact</a>
+      <a class="btn btn-primary btn-sm" href="/request-kit.html">Request a Kit Now</a>
+    </nav>
+
+    <button class="cart-btn" id="openCartBtn" aria-label="Open cart">
+      🛒 <span class="cart-badge" id="cartCount">0</span>
+    </button>
+  `;
+})();
+
