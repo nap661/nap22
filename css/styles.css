@@ -681,3 +681,46 @@ h2{font-size:30px;margin:0 0 18px}
 .band-blue .stars{
   color: #ffd43b; /* gold stars */
 }
+/* COMMUNITY VOICES SECTION */
+.section.band-blue {
+  background: #2563eb; /* blue background */
+  color: #ffffff;
+}
+
+/* Community Voices cards */
+.section.band-blue .card {
+  background: #ffffff;
+  color: #111827;
+  border-radius: 16px;
+  padding: 24px;
+}
+
+/* Stars + small text */
+.section.band-blue .stars {
+  color: #facc15;
+}
+
+.section.band-blue .muted {
+  color: #4b5563;
+}
+/* JOIN OUR COMMUNITY */
+.section.band-purple {
+  background: #7c3aed;
+  color: #ffffff;
+}
+
+.section.band-purple h2,
+.section.band-purple h3,
+.section.band-purple p {
+  color: #ffffff;
+}
+
+.section.band-purple .card {
+  background: #ffffff;
+  color: #111827;
+}
+.section.band-purple .btn,
+.section.band-blue .btn {
+  color: #111827;
+  background: #facc15;
+}
