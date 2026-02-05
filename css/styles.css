@@ -658,3 +658,26 @@ h2{font-size:30px;margin:0 0 18px}
   color: #111;
   border: 1px solid rgba(0,0,0,0.08);
 }
+/* ===== Fix Community Voices (blue section) ===== */
+.band-blue{
+  background: #0b5ed7; /* strong blue */
+  color: #ffffff;
+}
+
+.band-blue h2,
+.band-blue h3,
+.band-blue p,
+.band-blue a,
+.band-blue .muted{
+  color: #ffffff;
+}
+
+.band-blue .card{
+  background: rgba(255,255,255,0.12);
+  color: #ffffff;
+  border: 1px solid rgba(255,255,255,0.25);
+}
+
+.band-blue .stars{
+  color: #ffd43b; /* gold stars */
+}
