@@ -617,3 +617,44 @@ h2{font-size:30px;margin:0 0 18px}
   padding:14px 18px;
   border-radius:14px;
 }
+/* ===== Screenshot band colours ===== */
+.band-blue{
+  background:#0f1a2b; /* deep navy like screenshot */
+  color:#fff;
+}
+
+.band-blue .muted,
+.band-blue p,
+.band-blue h2,
+.band-blue h3,
+.band-blue a{
+  color:#fff;
+}
+
+.band-blue .card{
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.14);
+}
+
+.band-blue .stars{
+  letter-spacing: 2px;
+}
+/* ===== Fix Join Our Community text contrast ===== */
+.band-purple{
+  background: #f3e8ff; /* soft purple background */
+  color: #111;         /* dark text */
+}
+
+.band-purple h2,
+.band-purple h3,
+.band-purple p,
+.band-purple a,
+.band-purple .muted{
+  color: #111;
+}
+
+.band-purple .card{
+  background: #fff;
+  color: #111;
+  border: 1px solid rgba(0,0,0,0.08);
+}
