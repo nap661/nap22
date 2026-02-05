@@ -865,3 +865,74 @@ h2{font-size:30px;margin:0 0 18px}
 .section.upcoming .tag {
   color: #fff;
 }
+/* COMMUNITY VOICES (band-blue) */
+.section.band-blue{
+  background:#3b82f6;            /* solid blue like screenshot */
+  color:#fff;
+}
+
+.section.band-blue h2{
+  color:#fff;
+}
+
+.section.band-blue .card{
+  background:#fff;               /* cards should be white */
+  color:#111;                    /* readable text */
+  border:0;
+  box-shadow:0 12px 30px rgba(0,0,0,.18);
+}
+
+.section.band-blue .muted{
+  color:#374151;                 /* muted but still readable on white card */
+}
+/* JOIN OUR COMMUNITY (band-purple) */
+.section.band-purple{
+  background: linear-gradient(135deg, #ec4899 0%, #8b5cf6 55%, #3b82f6 100%);
+  color:#fff;
+}
+
+.section.band-purple h2{
+  color:#fff;
+}
+
+.section.band-purple .card{
+  background:#fff;
+  color:#111;
+}
+
+.section.band-purple .card .muted{
+  color:#4b5563;
+}
+
+.section.band-purple .link{
+  color:#2563eb;                 /* nice readable link */
+  font-weight:700;
+}
+/* UPCOMING TRAINING SECTION SHOULD BE WHITE */
+.section.upcoming{
+  background:#fff;
+}
+
+.section.upcoming .up-title,
+.section.upcoming .up-sub{
+  color:#111;
+}
+
+.section.upcoming .session-card{
+  background:#fff;
+}
+/* TRAINING PROGRAMS (band-green) */
+.section.band-green{
+  background:#a3e635;            /* lime like screenshot */
+  color:#111;
+}
+
+.section.band-green h2{
+  color:#fff;                    /* screenshot has white heading */
+  text-align:center;
+}
+
+.section.band-green .card{
+  background:#fff;
+  color:#111;
+}
