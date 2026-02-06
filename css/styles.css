@@ -836,103 +836,69 @@ h2{font-size:30px;margin:0 0 18px}
 .section.band-blue .card * { color: #111; }      /* everything inside cards */
 .section.band-blue .card .muted { color: rgba(0,0,0,.65); }
 .section.band-blue .stars { color: #f4c400; }
+/* ===============================
+   FINAL OVERRIDES (keep only this)
+   =============================== */
 
-/* Join Our Community: title white, force card text dark */
-.section.band-purple { color: #fff; }            /* section background area */
-.section.band-purple .card,
-.section.band-purple .card * { color: #111; }    /* everything inside cards */
-.section.band-purple .card .muted { color: rgba(0,0,0,.65); }
-.section.band-purple .link { color: #2f6fe7; font-weight: 700; }
-/* --- FIX: Upcoming Training cards should be white --- */
-
-.section.upcoming {
-  background: #f7f9fc; /* light neutral section background */
-}
-
-.section.upcoming .session-card {
-  background: #ffffff;
-  color: #111;
-  border-radius: 16px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-}
-
-.section.upcoming .session-card p,
-.section.upcoming .session-card li {
-  color: #333;
-}
-
-/* Make sure tags stay coloured */
-.section.upcoming .tag {
-  color: #fff;
-}
-/* COMMUNITY VOICES (band-blue) */
+/* COMMUNITY VOICES (blue band + white cards) */
 .section.band-blue{
-  background:#3b82f6;            /* solid blue like screenshot */
+  background:#3b82f6;
   color:#fff;
 }
-
-.section.band-blue h2{
-  color:#fff;
-}
-
+.section.band-blue h2{ color:#fff; }
 .section.band-blue .card{
-  background:#fff;               /* cards should be white */
-  color:#111;                    /* readable text */
+  background:#fff;
+  color:#111;
   border:0;
   box-shadow:0 12px 30px rgba(0,0,0,.18);
 }
+.section.band-blue .card .muted{ color:#4b5563; }
+.section.band-blue .stars{ color:#fbbf24; } /* keeps stars yellow */
 
-.section.band-blue .muted{
-  color:#374151;                 /* muted but still readable on white card */
-}
-/* JOIN OUR COMMUNITY (band-purple) */
+/* JOIN OUR COMMUNITY (purple gradient band + white cards + readable text) */
 .section.band-purple{
   background: linear-gradient(135deg, #ec4899 0%, #8b5cf6 55%, #3b82f6 100%);
   color:#fff;
 }
-
-.section.band-purple h2{
-  color:#fff;
-}
-
+.section.band-purple h2{ color:#fff; }
 .section.band-purple .card{
   background:#fff;
   color:#111;
 }
-
-.section.band-purple .card .muted{
-  color:#4b5563;
-}
-
+.section.band-purple .card .muted{ color:#4b5563; }
 .section.band-purple .link{
-  color:#2563eb;                 /* nice readable link */
+  color:#2563eb;
   font-weight:700;
 }
-/* UPCOMING TRAINING SECTION SHOULD BE WHITE */
+
+/* UPCOMING TRAINING (section white, cards white) */
 .section.upcoming{
   background:#fff;
 }
-
 .section.upcoming .up-title,
 .section.upcoming .up-sub{
   color:#111;
 }
-
 .section.upcoming .session-card{
   background:#fff;
-}
-/* TRAINING PROGRAMS (band-green) */
-.section.band-green{
-  background:#a3e635;            /* lime like screenshot */
   color:#111;
+  border-radius:16px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.08);
 }
+.section.upcoming .session-card li{ color:#333; }
+/* IMPORTANT: don't force all tags to white globally */
+.section.upcoming .tag{ color:inherit; }
 
+/* TRAINING PROGRAMS (lime band + white cards) */
+.section.band-green{
+  background:#a3e635;
+}
 .section.band-green h2{
-  color:#fff;                    /* screenshot has white heading */
+  color:#fff;
   text-align:center;
 }
-
 .section.band-green .card{
   background:#fff;
   color:#111;
 }
+
