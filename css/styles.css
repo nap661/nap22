@@ -423,9 +423,7 @@ footer.footer .badge{
   border-radius:14px !important;
   font-weight:900 !important;
 }
-/* === FIX FOOTER BADGE (NALOXONE SAVES LIVES) === */
-footer .badge{
-  width
+
 /* FIX FOOTER "NALOXONE SAVES LIVES" BADGE */
 footer.footer .badge{
   display:inline-block !important;
