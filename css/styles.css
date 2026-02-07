@@ -473,3 +473,13 @@ footer.footer .badge{
   );
   pointer-events:none;
 }
+/* Footer pill badge (NOT the avatar badges) */
+.footer-badge{
+  display:inline-block;
+  background:#facc15;
+  color:#111;
+  font-weight:900;
+  padding:14px 18px;
+  border-radius:14px;
+  white-space:nowrap;
+}
