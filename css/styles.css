@@ -20,32 +20,54 @@ html,body{
   padding:0;
   font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
   color:var(--text);
-  background:#f8fafc
+  background:#f8fafc;
 }
+img{max-width:100%;display:block}
 a{color:inherit;text-decoration:none}
+
 .container{max-width:1120px;margin:0 auto;padding:0 18px}
 .center{text-align:center}
-.mt-20{margin-top:20px}
 .muted{color:var(--muted)}
 
-/* HEADER */
+/* ================= HEADER ================= */
 .site-header{
   background:var(--yellow);
   position:sticky;
   top:0;
   z-index:50;
 }
-.nav{display:flex;align-items:center;gap:14px;padding:14px 0}
-.brand{display:flex;gap:10px;font-weight:900}
-.brand-dot{width:14px;height:14px;border-radius:999px;background:#111}
-.nav-links{display:flex;gap:14px;flex:1;justify-content:center}
+.nav{
+  display:flex;
+  align-items:center;
+  gap:14px;
+  padding:14px 0;
+}
+.brand{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  font-weight:900;
+}
+.brand-dot{
+  width:14px;
+  height:14px;
+  border-radius:999px;
+  background:#111;
+}
+.nav-links{
+  display:flex;
+  gap:14px;
+  flex:1;
+  justify-content:center;
+}
 .nav-links a{font-weight:800}
 
-/* BUTTONS */
+/* ================= BUTTONS ================= */
 .btn{
   display:inline-flex;
   align-items:center;
   justify-content:center;
+  gap:8px;
   padding:12px 18px;
   border-radius:999px;
   font-weight:900;
@@ -55,12 +77,26 @@ a{color:inherit;text-decoration:none}
 .btn-yellow{background:var(--yellow);color:#111}
 .btn-pink{background:var(--pink);color:#111}
 .btn-blue{background:var(--blue);color:#fff}
-.btn-outline{background:transparent;border:2px solid #111;color:#111}
+.btn-outline{
+  background:transparent;
+  border:2px solid #111;
+  color:#111;
+}
 
-/* HERO */
+/* ================= SECTIONS ================= */
+.section{padding:72px 0}
+
+/* ================= HERO ================= */
 .top-hero{padding:40px 0}
-.hero-grid{display:grid;grid-template-columns:1.2fr .9fr;gap:22px}
-.hero-card{border-radius:var(--radius);overflow:hidden}
+.hero-grid{
+  display:grid;
+  grid-template-columns:1.2fr .9fr;
+  gap:22px;
+}
+.hero-card{
+  border-radius:var(--radius);
+  overflow:hidden;
+}
 .hero-left{
   padding:36px;
   background:linear-gradient(135deg,#f3d547,#90c32b);
@@ -72,7 +108,7 @@ a{color:inherit;text-decoration:none}
   justify-content:center;
 }
 
-/* STATS */
+/* ================= STATS BAR ================= */
 .stats-bar{
   background:linear-gradient(90deg,#3b82f6,#2563eb);
   padding:26px 0;
@@ -84,13 +120,15 @@ a{color:inherit;text-decoration:none}
   text-align:center;
   color:#fff;
 }
-.stat-num{font-size:44px;font-weight:900}
+.stat-num{
+  font-size:44px;
+  font-weight:900;
+}
 
-/* SECTIONS */
-.section{padding:72px 0}
-
-/* UPCOMING */
-.section.upcoming{background:#fff}
+/* ================= UPCOMING ================= */
+.section.upcoming{
+  background:#fff;
+}
 .session-card{
   background:#fff;
   border-radius:18px;
@@ -98,7 +136,9 @@ a{color:inherit;text-decoration:none}
   box-shadow:0 14px 32px rgba(0,0,0,.1);
 }
 
-/* TRAINING PROGRAMMES */
+/* ================= BANDS ================= */
+
+/* Lime training band */
 .section.band-green{
   background:var(--lime);
 }
@@ -108,7 +148,7 @@ a{color:inherit;text-decoration:none}
   border-radius:18px;
 }
 
-/* JOIN COMMUNITY */
+/* Purple community band */
 .section.band-purple{
   background:linear-gradient(135deg,#ec4899,#8b5cf6,#3b82f6);
   color:#fff;
@@ -118,7 +158,7 @@ a{color:inherit;text-decoration:none}
   color:#111;
 }
 
-/* COMMUNITY VOICES */
+/* Blue voices band */
 .section.band-blue{
   background:#3b82f6;
   color:#fff;
@@ -129,18 +169,27 @@ a{color:inherit;text-decoration:none}
 }
 .section.band-blue .stars{color:#facc15}
 
-/* FOOTER */
+/* ================= CTA STRIP (YELLOW BIT YOU REMEMBER) ================= */
+.section.band-yellow{
+  background:var(--yellow);
+  padding:48px 0;
+  text-align:center;
+}
+
+/* ================= FOOTER ================= */
 .footer{
   background:#0f1a2b;
   color:#fff;
-  padding:44px 0;
+  padding:44px 0 24px;
 }
+.footer a{color:#fff}
 .footer-bottom{
   border-top:1px solid rgba(255,255,255,.2);
   margin-top:24px;
   padding-top:18px;
   display:flex;
   justify-content:space-between;
+  flex-wrap:wrap;
 }
 .footer .badge{
   background:var(--yellow);
@@ -149,74 +198,27 @@ a{color:inherit;text-decoration:none}
   border-radius:14px;
   font-weight:900;
 }
-/* =========================
-   LAYOUT HELPERS (RESTORE)
-   ========================= */
 
-.cards{
-  display:grid;
-  gap:20px;
+/* ================= MODALS ================= */
+.overlay{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.6);
+  display:none;
+  z-index:90;
 }
-.cards.two{
-  grid-template-columns:repeat(2,minmax(0,1fr));
-}
-.cards.three{
-  grid-template-columns:repeat(3,minmax(0,1fr));
-}
-@media(max-width:900px){
-  .cards.two,
-  .cards.three{
-    grid-template-columns:1fr;
-  }
-}
+.overlay.open{display:block}
 
-.up-grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:18px;
+.modal{
+  position:fixed;
+  inset:50% auto auto 50%;
+  transform:translate(-50%,-50%);
+  background:#fff;
+  width:min(960px,92vw);
+  border-radius:22px;
+  padding:20px;
+  display:none;
+  z-index:100;
 }
-@media(max-width:900px){
-  .up-grid{grid-template-columns:1fr}
-}
+.modal.open{display:block}
 
-/* =========================
-   COMMUNITY VOICES FIX
-   ========================= */
-
-.section.band-blue h2{
-  color:#fff;
-  text-align:center;
-  margin-bottom:20px;
-}
-
-/* =========================
-   JOIN COMMUNITY FIX
-   ========================= */
-
-.section.band-purple h2{
-  color:#fff;
-  text-align:center;
-  margin-bottom:20px;
-}
-
-/* =========================
-   FOOTER YELLOW STRIP (RESTORED)
-   ========================= */
-
-.footer-bottom{
-  border-top:1px solid rgba(255,255,255,.2);
-  margin-top:32px;
-  padding-top:24px;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  gap:12px;
-}
-
-.footer-bottom .badge{
-  background:var(--yellow);
-  color:#111;
-  font-weight:900;
-  padding:14px 20px;
-  border-radius:14px;
-}
