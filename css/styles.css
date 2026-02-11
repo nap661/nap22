@@ -107,9 +107,53 @@ a{color:inherit;text-decoration:none}
 .btn-blue-outline:hover{background:#eff6ff}
 
 /* BANDS */
-.section.band-green{background:var(--lime);padding:72px 0}
-.section.band-green h2{color:#fff;text-align:center;font-weight:900}
-.section.band-green .card{background:#fff;color:#111;border:0}
+/* =========================
+   NALOXONE TRAINING PROGRAMMES
+   ========================= */
+
+.section.band-green{
+  background: var(--lime);
+  padding: 56px 0; /* slightly tighter */
+}
+
+.section.band-green h2{
+  color:#fff;
+  text-align:center;
+  font-weight:900;
+  margin-bottom: 36px;
+}
+
+.section.band-green .cards{
+  gap:16px; /* smaller gap between cards */
+}
+
+.section.band-green .card{
+  background:#fff;
+  border-radius:18px;
+  padding:22px; /* smaller padding */
+  box-shadow:0 12px 28px rgba(0,0,0,.08);
+  transition:.2s ease;
+}
+
+.section.band-green .card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 18px 40px rgba(0,0,0,.12);
+}
+
+.section.band-green h3{
+  margin-top:8px;
+  margin-bottom:12px;
+}
+
+.section.band-green .ticks li{
+  font-size:14px;
+  margin:8px 0;
+}
+
+.section.band-green .btn{
+  margin-top:12px;
+}
+
 
 .section.band-purple{background:linear-gradient(135deg,#ec4899 0%, #8b5cf6 55%, #3b82f6 100%);color:#fff;padding:72px 0}
 .section.band-purple h2{color:#fff}
