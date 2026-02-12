@@ -821,6 +821,12 @@ img{max-width:100%;display:block}
     grid-template-columns: 1fr;
   }
 }
+.logo{
+  width:42px;
+  height:42px;
+  object-fit:contain;
+  display:block;
+}
 
 
 
