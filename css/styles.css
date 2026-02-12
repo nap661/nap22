@@ -742,6 +742,71 @@ img{max-width:100%;display:block}
   display: block !important;
   text-align: center !important;
 }
+/* ===== FORCE FIX: yellow buttons + footer badge ===== */
+
+/* ALL yellow buttons */
+.btn-yellow {
+  background: #facc15 !important;
+  color: #111 !important;
+  border: none !important;
+  font-weight: 900 !important;
+}
+
+/* Ready to make a difference section button */
+.section.band-lime .btn-yellow {
+  background: #facc15 !important;
+  color: #111 !important;
+}
+
+/* Footer bottom area */
+.footer-bottom {
+  display: block !important;
+  text-align: center !important;
+}
+/* ===== FORCE FIX: yellow buttons + footer badge ===== */
+
+/* ALL yellow buttons */
+.btn-yellow {
+  background: #facc15 !important;
+  color: #111 !important;
+  border: none !important;
+  font-weight: 900 !important;
+}
+
+/* Ready to make a difference section button */
+.section.band-lime .btn-yellow {
+  background: #facc15 !important;
+  color: #111 !important;
+}
+
+/* Footer bottom area */
+.footer-bottom {
+  display: block !important;
+  text-align: center !important;
+}
+
+/* BIG yellow bar at bottom */
+.footer-bottom .badge {
+  display: block !important;
+  width: min(720px, 100%) !important;
+  margin: 20px auto 10px !important;
+  padding: 20px 28px !important;
+  font-size: 20px !important;
+  font-weight: 900 !important;
+  border-radius: 14px !important;
+  text-align: center !important;
+  background: #facc15 !important;
+  color: #111 !important;
+}
+
+/* small copyright text underneath */
+.footer-bottom .tiny {
+  display: block !important;
+  margin-top: 8px !important;
+  opacity: 0.7 !important;
+}
+
+
 
 
 
