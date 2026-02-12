@@ -692,54 +692,37 @@ img{max-width:100%;display:block}
   padding: 14px 22px;
   font-weight: 900;
 }
-
-/* --- FOOTER: make the yellow "NALOXONE SAVES LIVES" badge BIG like the screenshot --- */
+/* ===== BIG FOOTER BUTTON ===== */
 .footer-bottom {
-  display: block !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
+  border-top: 1px solid rgba(255,255,255,.2);
+  margin-top: 24px;
+  padding-top: 24px;
 }
 
 .footer-bottom .badge {
   display: block;
-  width: min(720px, 100%);
-  margin: 18px auto 10px;
-  padding: 18px 28px;
-  font-size: 20px;
-  font-weight: 900;
-  letter-spacing: .6px;
-  border-radius: 14px;
-  text-align: center;
+  width: 100%;
+  max-width: 760px;
   background: var(--yellow);
   color: #111;
+  padding: 20px 30px;
+  font-size: 22px;
+  font-weight: 900;
+  border-radius: 14px;
+  letter-spacing: .5px;
+  margin: 10px auto 14px;
 }
 
-/* keep © line underneath, small + muted */
 .footer-bottom .tiny {
-  display: block;
-  margin-top: 8px;
-  opacity: .75;
+  font-size: 13px;
+  opacity: .7;
 }
 
-/* --- Mobile polish: keep things roomy but not massive --- */
-@media (max-width: 640px) {
-  .footer-bottom .badge {
-    padding: 16px 18px;
-    font-size: 18px;
-  }
-/* Fallback: if the yellow bar isn't inside .footer-bottom */
-footer .badge{
-  display:block;
-  width:min(720px,100%);
-  margin:18px auto 10px;
-  padding:18px 28px;
-  font-size:20px;
-  font-weight:900;
-  letter-spacing:.6px;
-  border-radius:14px;
-  text-align:center;
-  background:var(--yellow);
-  color:#111;
-}
+
 
 
 
