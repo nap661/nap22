@@ -441,13 +441,12 @@ a{color:inherit;text-decoration:none}
   border-top:1px solid rgba(255,255,255,.14);
 }
 .footer .badge{
-  display:inline-block;
-  background:var(--yellow);
+  background:#facc15;
   color:#111;
+  padding:18px 28px;        /* bigger */
+  border-radius:16px;
   font-weight:900;
-  padding:14px 18px;
-  border-radius:14px;
-}
+  font-size:
 
 /* =========================
    MODALS + TOAST
