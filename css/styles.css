@@ -805,6 +805,22 @@ img{max-width:100%;display:block}
   margin-top: 8px !important;
   opacity: 0.7 !important;
 }
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0,0,0,.12);
+}
+.card {
+  padding: 20px;
+}
+.section {
+  padding: 72px 0;
+}
+@media (max-width: 700px) {
+  .cards.two,
+  .cards.three {
+    grid-template-columns: 1fr;
+  }
+}
 
 
 
