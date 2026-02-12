@@ -576,7 +576,94 @@ img{max-width:100%;display:block}
   .nav-links.open{display:flex}
   .menu-btn{display:inline-flex}
 }
+/* ===================================================
+   FINAL HOMEPAGE FIX — DO NOT EDIT ABOVE THIS LINE
+   =================================================== */
 
+/* ---------- Buttons ---------- */
+.btn-yellow{
+  background:#facc15 !important;
+  color:#111 !important;
+  font-weight:900;
+}
+
+.btn-pink{
+  background:#ff4fa3 !important;
+  color:#111 !important;
+  font-weight:900;
+}
+
+.btn-blue{
+  background:#2563eb !important;
+  color:#fff !important;
+  font-weight:900;
+}
+
+.btn-outline{
+  border:2px solid #111 !important;
+  color:#111 !important;
+  background:#fff !important;
+}
+
+/* ---------- Free Resources Cards ---------- */
+.resource{
+  background:#fff !important;
+  border-radius:22px;
+  padding:24px;
+  box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.resource .resource-top{
+  font-size:42px !important;
+  margin-bottom:14px;
+}
+
+.resource .btn-yellow{
+  display:inline-block;
+  margin-top:14px;
+  padding:12px 22px;
+  border-radius:999px;
+}
+
+/* ---------- Ready to Make a Difference Section ---------- */
+.section.band-lime{
+  background:#b7d11a !important;
+  color:#111 !important;
+  padding:80px 0 !important;
+}
+
+.section.band-lime h2{
+  font-size:36px;
+  font-weight:900;
+}
+
+.section.band-lime .btn-yellow{
+  padding:14px 26px;
+  border-radius:999px;
+  font-size:16px;
+}
+
+/* ---------- Footer ---------- */
+.footer{
+  background:#0f1a2b !important;
+  color:#fff !important;
+  padding:60px 0 30px !important;
+}
+
+.footer .badge{
+  background:#facc15 !important;
+  color:#111 !important;
+  padding:18px 28px !important;
+  font-size:18px;
+  border-radius:14px;
+  font-weight:900;
+}
+
+.footer-bottom{
+  margin-top:40px !important;
+  padding-top:24px !important;
+  border-top:1px solid rgba(255,255,255,.2);
+}
 
 
 
