@@ -833,6 +833,11 @@ img{max-width:100%;display:block}
   width: auto;
   display: block;
 }
+.logo{
+  height: 58px;
+  width: auto;
+  display:block;
+}
 
 
 
