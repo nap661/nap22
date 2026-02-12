@@ -486,7 +486,60 @@ a{color:inherit;text-decoration:none}
 
 /* ---------- HOW TO GET NALOXONE ---------- */
 .how-blue .btn-yellow{
-  background:#
+  background:#}
+  
+/* =========================
+   FINAL FIXES
+   ========================= */
+
+/* Free Resources cards */
+.resource {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 22px;
+  box-shadow: 0 14px 32px rgba(0,0,0,.08);
+}
+
+.resource-top {
+  font-size: 36px;
+  margin-bottom: 12px;
+}
+
+/* Ready To Make A Difference section */
+.section.band-lime {
+  background: #b7d11a;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.section.band-lime h2 {
+  color: #111;
+}
+
+.section.band-lime .muted {
+  color: #1f2937;
+}
+
+/* Fix yellow button at bottom */
+.section.band-lime .btn-pink {
+  background: #ff4fa3;
+  color: #111;
+}
+
+.section.band-lime .btn-outline {
+  border: 2px solid #111;
+  color: #111;
+}
+
+/* Footer badge bigger */
+.footer .badge {
+  background: #facc15;
+  color: #111;
+  padding: 18px 28px;
+  font-size: 18px;
+  border-radius: 18px;
+  font-weight: 900;
+}
 
 
 
